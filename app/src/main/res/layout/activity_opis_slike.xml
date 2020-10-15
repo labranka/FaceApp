@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context=".OpisSlike">
+
+    <ImageView
+        android:id="@+id/imgSlika1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <Button
+        android:id="@+id/btnAnaliza"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Analiziraj" />
+
+    <TextView
+        android:id="@+id/txtRezultat"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnAnaliza"
+        android:text="Opis..." />
+
+
+</RelativeLayout>

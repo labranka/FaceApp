@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnPrepoznaj"
+        >
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.example.faceapp.Helper.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnPrepoznaj" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnPrepoznaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/black"
+        android:text="Koliko je ljudi na fotografiji?"
+        >
+    </Button>
+</RelativeLayout>
